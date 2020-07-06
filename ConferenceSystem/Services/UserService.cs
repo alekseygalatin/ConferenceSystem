@@ -21,6 +21,11 @@ namespace ConferenceSystem.Services
             }
         };
 
+        public Task<List<User>> GetAsync()
+        {
+            return Task.FromResult(Users);
+        }
+
         public Task<User> GetAsync(string userEmail)
         {
             return Task.FromResult(Users.SingleOrDefault(x => x.Email == userEmail));
