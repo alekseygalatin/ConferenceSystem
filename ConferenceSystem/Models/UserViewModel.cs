@@ -1,4 +1,4 @@
-﻿namespace ConferenceSystem.Controllers.ViewModels
+﻿namespace ConferenceSystem.Models
 {
     public class UserViewModel
     {

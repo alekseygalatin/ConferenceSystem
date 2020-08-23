@@ -62,6 +62,17 @@ namespace ConferenceSystem
                             }
 
                             return Task.CompletedTask;
+                        },
+
+                        OnMessageReceived = context =>
+                        {
+                            if (context.Request.Path.Value.StartsWith("/conference") &&
+                                context.Request.Query.TryGetValue("token", out var token))
+                            {
+                                context.Token = token;
+                            }
+
+                            return Task.CompletedTask;
                         }
                     };
                 });

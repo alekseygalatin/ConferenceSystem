@@ -1,5 +1,4 @@
-﻿using ConferenceSystem.Controllers.ViewModels;
-using ConferenceSystem.Models;
+﻿using ConferenceSystem.Models;
 
 namespace ConferenceSystem.Mappers
 {
